@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../sass/app.scss">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>MoV13s</title>
 </head>
 <body>
@@ -13,9 +13,9 @@
         <div class="row g-2">
             @foreach ($movies as $movie)
             <div class="card col-6">
-                <img src="nopic.png" alt="">
+                <img src="{{asset('img/nopic.png')}}" alt="">
                 <div class="card-header">
-                    <h3>{{$movie->title}}</h3>
+                    <h3>{{$movie->Title}}</h3>
                 </div>
                 <div class="card-body">
                     <p class="card-text">{{$movie->Original_Title}}</p>
